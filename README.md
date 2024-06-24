@@ -32,3 +32,25 @@ To run the Resume Reviewer locally, follow these steps:
 6. Run development server:
    ```bash
    python manage.py runserver
+
+7. Navigate to webpage:
+   ```bash
+   http://localhost:8000/api/
+
+## Installation Using Docker
+
+1. Fork and clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Urine_strip_analyzer.git
+
+2. Navigate to the Project Directory:
+   ```bash
+   cd analyzer_project
+
+3. Start Docker containers:
+   ```bash
+   docker-compose up --build
+
+4. Navigate to webpage:
+   ```bash
+   http://localhost:8000/api/
