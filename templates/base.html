@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Urine Strip</title>
+    <meta name="csrf-token" content="{{ csrf_token }}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Upload Urine Strip</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)">
+        <div id="imagePreview">
+            <img id="previewImg" src="#" alt="Image Preview">
+        </div>
+        <button type="submit">Upload</button>
+    </form>
+    <pre id="result"></pre>
+
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
