@@ -17,7 +17,7 @@ To run the Resume Reviewer locally, follow these steps:
      ```bash
      source venv/bin/activate
 
-3. Clone the repository:
+3. Fork and clone the repository:
    ```bash
    git clone https://github.com/your-username/Urine_strip_analyzer.git
 
