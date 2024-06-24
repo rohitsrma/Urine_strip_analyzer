@@ -23,7 +23,7 @@ To run the Resume Reviewer locally, follow these steps:
 
 4. Navigate to the Project Directory:
    ```bash
-   cd analyzer_project
+   cd Urine_strip_analyzer
 
 5. Install Dependencies:
    ```bash
@@ -45,7 +45,7 @@ To run the Resume Reviewer locally, follow these steps:
 
 2. Navigate to the Project Directory:
    ```bash
-   cd analyzer_project
+   cd Urine_strip_analyzer
 
 3. Start Docker containers:
    ```bash
