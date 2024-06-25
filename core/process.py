@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 
 def analyse_colors(filepath):
-    print(filepath)
     image = cv2.imread(f"../analyzer_project{filepath}")
 
     # Resize the image for easier processing
