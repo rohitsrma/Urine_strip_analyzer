@@ -9,7 +9,7 @@ def analyse_colors(filepath):
     image = cv2.imread(fixed_path)
 
     if image is None:
-        raise ValueError(f"Image not found or cannot be read: {image_path}")
+        raise ValueError(f"Image not found or cannot be read: {image}")
 
     # Resize the image for easier processing
     scale_percent = 50
