@@ -1,8 +1,15 @@
 import cv2
 import numpy as np
+import os
+from django.conf import settings
 
 def analyse_colors(filepath):
-    image = cv2.imread(f"../analyzer_project{filepath}")
+    path=f"{settings.BASE_DIR}{filepath}"
+    fixed_path = path.replace("\\", "/")
+    image = cv2.imread(fixed_path)
+
+    if image is None:
+        raise ValueError(f"Image not found or cannot be read: {image_path}")
 
     # Resize the image for easier processing
     scale_percent = 50
